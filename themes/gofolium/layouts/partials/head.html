@@ -20,5 +20,8 @@
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  
+  {{ "<!-- Google Tag Manager -->" | safeHTML }}
+  {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }}
 
 </head>

@@ -47,7 +47,7 @@ expertise:
       
     # expertise item loop
     - name : "Data Management, Administration, and ETL"
-      content : "Adverity, R plumbr, Google BigQuery, and Google Cloud"
+      content : "Adverity, R Plumber, Google BigQuery, and Google Cloud"
       
     # expertise item loop
     - name : "DevOps and Production"

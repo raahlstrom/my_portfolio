@@ -13,6 +13,10 @@ disableLanguages = [true] # desable language from here
 [markup.goldmark.renderer]
 unsafe = true
 
+# GTM ID
+
+gtm_id = "GTM-MC6F7W8"
+
 ############################# Plugins ##############################
 
 # CSS Plugins
