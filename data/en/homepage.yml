@@ -92,7 +92,7 @@ talk:
 ########################## Contact ############################
 # contact foem
 contact_form:
-  enable : true
+  enable : false
   title : "Contact Me"
   contact_form_action : "#" #contact form works with https://formspree.io
   name_label : "Your Name"
@@ -103,13 +103,12 @@ contact_form:
 # contact info
 contact_info:
   enable : true
-  title : "Get In Touch"
-  content : "Let’s talk about your project and how I can help you or if you just want to chat about design and art - shoot me a message at abcxmple@gmail.com"
+  title : "Let's Get in Touch"
+  content : ""
   contact_item:
     # contact item loop
     - icon : "ti-email" # themify icon : https://themify.me/themify-icons
       id : "ahlstrom.alex@gmail.com"
-
     # contact item loop
     - icon : "ti-mobile" # themify icon : https://themify.me/themify-icons
       id : "281-995-1211"
