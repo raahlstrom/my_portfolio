@@ -1,0 +1,114 @@
+######################## default configuration ####################
+baseURL = "https://examplesite.com"
+title = "Alex's Portfolio"
+theme = "gofolium"
+# post pagination
+paginate = "4"
+# post excerpt
+summaryLength = "10"
+# disable language
+disableLanguages = [true] # desable language from here
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/particles/particles.min.js"
+[[params.plugins.js]]
+link = "plugins/particles/stats.min.js"
+[[params.plugins.js]]
+link = "plugins/reading-time/readingTime.min.js"
+
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "home"
+URL = "home"
+weight = 1
+
+[[menu.main]]
+name = "about"
+URL = "about"
+weight = 2
+
+[[menu.main]]
+name = "projects"
+URL = "project"
+weight = 3
+  
+[[menu.main]]
+name = "thought leadership"
+URL = "blog"
+weight = 4
+
+[[menu.main]]
+name = "presentations"
+URL = "talk"
+weight = 5
+  
+[[menu.main]]
+name = "contact"
+URL = "contact"
+weight = 6
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+# Meta data
+description = "This is meta description"
+author = "Alex Ahlstrom"
+# Google Analitycs
+google_analitycs_id = "" # your id
+
+# body particles
+particles = true
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[params.navigation_button]
+enable = true
+label = "resume"
+link = "https://drive.google.com/file/d/1V40vYx03u1ANIepAY3FxaBPhn5WG_Pfj/view"
+  
+############################# social site ########################
+
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/AlexAhlstrom"
+
+[[params.social]]
+title = "linkedin"
+icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+link = "https://linkedin.com/in/alex-ahlstrom-140214135"
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/"
+weight = 1
+# copyright
+copyright = "Copyright &copy; 2022 Alex Ahlstrom"
