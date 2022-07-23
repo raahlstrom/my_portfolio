@@ -5,7 +5,7 @@ date: 2022-07-23T15:40:24+06:00
 image : "talks/talk-2_files/little_rock_ar.jpg"
 draft: false
 # description
-description: "This is meta description"
+description: "description of presentation at higheredweb 2022"
 # links
 links:
   - label : "Register"
