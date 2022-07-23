@@ -1,5 +1,5 @@
 ---
-title: "Reasons Why Employees Quit | Human Resources Analytics"
+title: "Reasons Why Employees Quit | Human Resources Analytics ABC"
 date: 2020-03-14T15:40:24+06:00
 # talks thumb
 image : "images/blogs/blog1.jpg"
