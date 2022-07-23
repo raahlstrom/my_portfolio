@@ -1,6 +1,6 @@
 ---
 title: "HigherEdWeb 2022: When Google Analytics Gives You Lemons, Make Lemonade"
-date: 2022-07-263T15:40:24+06:00
+date: 2022-06-23T15:40:24+06:00
 # talks thumb
 image : "talks/talk-1_files/little_rock_ar.jpg"
 draft: false
