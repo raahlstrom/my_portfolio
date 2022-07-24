@@ -13,10 +13,6 @@ disableLanguages = [true] # desable language from here
 [markup.goldmark.renderer]
 unsafe = true
 
-# GTM ID
-
-gtm_id = "GTM-MC6F7W8"
-
 ############################# Plugins ##############################
 
 # CSS Plugins
@@ -78,7 +74,8 @@ logo = "images/logo.png"
 # Meta data
 description = "This is meta description"
 author = "Alex Ahlstrom"
-
+# GTM ID
+gtm_id = "GTM-MC6F7W8"
 # body particles
 particles = true
 
