@@ -30,6 +30,9 @@ img {
 
 a {
   color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: transparent;
 }
 
 a,
@@ -44,7 +47,10 @@ select {
 }
 
 a:hover {
-  color: $primary-color;
+      color: $white;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      text-decoration-color: $primary-color;
 }
 
 .slick-slide {
@@ -94,7 +100,7 @@ a:hover {
 }
 
 .text-primary {
-  color: $primary-color !important;
+  color: $secondary-color !important;
 }
 
 .zindex-1 {

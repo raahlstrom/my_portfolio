@@ -16,9 +16,15 @@
 
 .navbar-dark .navbar-nav .nav-link {
   color: $text-color;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: transparent;
 
   &:hover {
-    color: $primary-color;
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+    text-underline-offset: 10px;
+    color: $text-color;
   }
 }
 
