@@ -11,11 +11,13 @@
     border-radius: 50%;
     text-align: center;
     transition: .2s ease;
+    text-decoration-color: transparent;
 
     &:hover {
       color: $primary-color;
       border-color: $primary-color;
       text-decoration: none;
+      text-decoration-color: transparent;
     }
   }
 }

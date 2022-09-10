@@ -301,11 +301,13 @@ p:empty {
   border: 1px solid #555;
   border-radius: 50%;
   text-align: center;
-  transition: .2s ease; }
+  transition: .2s ease;
+  text-decoration-color: transparent; }
   .social-icons a:hover {
     color: #15E600;
     border-color: #15E600;
-    text-decoration: none; }
+    text-decoration: none;
+    text-decoration-color: transparent; }
 
 .title strong {
   color: #15E600; }
