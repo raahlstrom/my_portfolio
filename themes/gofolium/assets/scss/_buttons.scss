@@ -57,6 +57,7 @@
   transition: .3s;
 }
 .btn-primary:hover {
+  text-decoration-color: transparent;
   background-color: transparent;
   border: 3px solid $primary-color;
   color: $primary-color;

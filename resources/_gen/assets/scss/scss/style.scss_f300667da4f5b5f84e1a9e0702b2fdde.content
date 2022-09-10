@@ -137,6 +137,7 @@ h6,
   transition: .3s; }
 
 .btn-primary:hover {
+  text-decoration-color: transparent;
   background-color: transparent;
   border: 3px solid #15E600;
   color: #15E600;
