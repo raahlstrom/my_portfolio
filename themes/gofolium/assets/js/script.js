@@ -68,7 +68,7 @@
 				"value": "#15E600"
 			},
 			"shape": {
-				"type": "circle",
+				"type": "edge",
 				"stroke": {
 					"width": 0,
 					"color": "#000000"
