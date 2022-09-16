@@ -213,6 +213,13 @@ a:hover {
     .section {
       padding-top: 80px;
       padding-bottom: 80px; } }
+article {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  background: #0F0F0F; }
+
 .bg-cover {
   background-size: cover;
   background-position: center center;
