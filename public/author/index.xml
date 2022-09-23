@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Alex&#39;s Portfolio</title>
-    <link>https://alexahlstromsportfolio.netlify.app/author/</link>
+    <link>https://datawizkid/author/</link>
     <description>Recent content in Authors on Alex&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2022 Alex Ahlstrom</copyright><atom:link href="https://alexahlstromsportfolio.netlify.app/author/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright &amp;copy; 2022 Alex Ahlstrom</copyright><atom:link href="https://datawizkid/author/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>George Cushen</title>
-      <link>https://alexahlstromsportfolio.netlify.app/author/george-cushen/</link>
+      <link>https://datawizkid/author/george-cushen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alexahlstromsportfolio.netlify.app/author/george-cushen/</guid>
+      <guid>https://datawizkid/author/george-cushen/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue.</description>
     </item>
     
