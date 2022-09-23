@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://alexahlstromsportfolio.netlify.app/"
+baseURL = "https://datawizkid"
 title = "Alex's Portfolio"
 theme = "gofolium"
 # post pagination
