@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://datawizkid"
+baseURL = "https://datawizkid.com"
 title = "Alex's Portfolio"
 theme = "gofolium"
 # post pagination
