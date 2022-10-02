@@ -2,7 +2,7 @@
 banner:
   enable : true
   title :  "how do we build **data infrastructure** that empowers **data driven** decision making?"
-  subtitle : "hey I'm Alex! Leading data systems at SimpsonScarborough."
+  subtitle : "Leading data systems at SimpsonScarborough. Building to provide data driven strategy. Believer in the power of education."
   social : true
   # social icons comes from `config.toml` file.
 
@@ -10,7 +10,7 @@ banner:
 ####################### About ##############################
 about:
   enable : true
-  title : "Analytics Developer at SimpsonScarborough"
+  title : "👋 I'm Alex"
   image : "images/headshot.jpg"
   content : "How do we measure and quantify a brand? How do we elevate brand analytics beyond vanity metrics and into actionable strategy? How do we conduct brand and market research ethically? 
   
