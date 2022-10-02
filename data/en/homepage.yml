@@ -92,7 +92,7 @@ talk:
 ########################## Contact ############################
 # contact foem
 contact_form:
-  enable : false
+  enable : true
   title : "Contact Me"
   contact_form_action : "#" #contact form works with https://formspree.io
   name_label : "Your Name"
