@@ -93,8 +93,8 @@ talk:
 # contact foem
 contact_form:
   enable : true
-  title : "Contact Me"
-  contact_form_action : "#" #contact form works with https://formspree.io
+  title : "Let's Get in Touch"
+  contact_form_action : "https://formspree.io/f/xdowwjpo" #contact form works with https://formspree.io
   name_label : "Your Name"
   email_label : "Your Email"
   textarea_label : "Your Message"
@@ -103,7 +103,7 @@ contact_form:
 # contact info
 contact_info:
   enable : true
-  title : "Let's Get in Touch"
+  title : ""
   content : ""
   contact_item:
     # contact item loop
