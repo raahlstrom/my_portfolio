@@ -5,7 +5,6 @@ image: "projects/2022-10-01-covid19-college-reopening-dashboard/images/Screensho
 slug: []
 categories: []
 tags: []
-draft: yes
 description: Learn about how Higher Ed institutions changed their COVID 19 plans to adjust to changing conditions.
 links:
   - label : "See the Dashboard"

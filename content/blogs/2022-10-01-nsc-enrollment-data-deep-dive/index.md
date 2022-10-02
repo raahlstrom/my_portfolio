@@ -5,7 +5,6 @@ slug: []
 categories: []
 tags: []
 image : "blogs/2022-10-01-nsc-enrollment-data-deep-dive/images/clearinghouse__4-year-impact.png"
-draft: yes
 description: Learn about higher education enrollment trends and how COVID and the economic recession has created disparate outcomes for undergraduate, graduate, and community colleges and institutions.
 links:
   - label : "Read the Original Article"
