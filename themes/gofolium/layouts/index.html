@@ -4,13 +4,13 @@
 
 <!-- banner -->
 {{ if $data.homepage.banner.enable }}
-<section style="padding-bottom: 140px !important;" class="section pb-0" id="home">
+<section style="padding-bottom: 140px !important;padding-top: 40px !important" class="section pb-0" id="home">
   <div class="container">
     <div class="row">
       <div class="col-12">
         {{ with $data.homepage.banner }}
         <h1 class="display-1 font-weight-bold title mb-4">{{ .title | markdownify }}</h1>
-        <p class="h3 mb-5">{{ .subtitle | markdownify }}</p>
+        <p class="h3 mb-5"><span class="typewriter" style="--n:57">{{ .subtitle | markdownify }}</span></p>
         {{ end }}
         {{ if $data.homepage.banner.social }}
         <ul class="list-inline social-icons">

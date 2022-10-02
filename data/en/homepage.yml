@@ -1,8 +1,8 @@
 ######################### Banner ###########################
 banner:
   enable : true
-  title :  "Hey, I’m **Alex!**"
-  subtitle : "Data and Analytics in Higher Ed"
+  title :  "how do we build **data infrastructure** that empowers **data driven** decision making?"
+  subtitle : "hey I'm Alex! Leading data systems at SimpsonScarborough."
   social : true
   # social icons comes from `config.toml` file.
 

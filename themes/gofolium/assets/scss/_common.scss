@@ -147,3 +147,27 @@ p:empty{
   background-color: $body-color;
   z-index: -1;
 }
+
+// typewriter effect
+
+.typewriter {
+  color:#0000;
+  font-family: $monospace-font;
+  background:
+    linear-gradient(-90deg,$secondary-color 5px,#0000 0) 10px 0,
+    linear-gradient($text-color-light 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .7s infinite steps(1),   
+   t calc(var(--n)*.125s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
