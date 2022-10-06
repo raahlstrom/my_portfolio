@@ -31,13 +31,18 @@
 {{ with $data.homepage.about }}
 <section class="section pb-0" id="about">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center" style="align-items:start!important">
       <div class="col-lg-2">
         <img src="{{ .image | absURL }}" class="img-fluid rounded-lg mb-4" alt="">
       </div>
       <div class="col-lg-8">
         {{with .title}}<h2>{{ . | markdownify}}</h2>{{ end }}
         <p>{{ .content | markdownify }}</p>
+          <h4>
+            <a href="https://datawizkid.com/blogs/2022-10-05-why-data-matters/">
+                Learn Why Data Matters →
+            </a>
+          </h4>
       </div>
     </div>
   </div>
