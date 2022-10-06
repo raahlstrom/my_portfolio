@@ -1,8 +1,8 @@
 ######################### Banner ###########################
 banner:
   enable : true
-  title :  "how do we build **data infrastructure** that empowers **data driven** decision making?"
-  subtitle : "Leading data systems at SimpsonScarborough. Building to provide data driven strategy. Believer in the power of education."
+  title :  "how do we build **data products** that power **data-driven** action?"
+  subtitle : "Building data products & analytics at SimpsonScarborough. Data empowerment. Higher Ed Innovator."
   social : true
   # social icons comes from `config.toml` file.
 
