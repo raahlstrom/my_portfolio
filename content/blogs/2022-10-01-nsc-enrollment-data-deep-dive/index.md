@@ -15,3 +15,5 @@ Historically, Higher Education has been resilient during times of economic downt
 In this analysis I leverage [National Student Clearinghouse](https://www.studentclearinghouse.org/) data and historical IPEDS data to look at how the economic downturn during the COVID-19 pandemic was the same and how it was different to past economic downturns. From this analysis I provide insights for Higher Ed professionals.
 
 <a style = "color:white; text-decoration:none;" href="https://insights.simpsonscarborough.com/nsc-enrollment-data-deep-dive">Read The Article: NSC Enrollment Data Deep Dive →</a>
+
+<a style = "color:white; text-decoration:none;" href="https://github.com/simpscar/public_analysis">See The Analysis and Code →</a>

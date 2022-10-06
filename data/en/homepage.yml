@@ -10,14 +10,22 @@ banner:
 ####################### About ##############################
 about:
   enable : true
-  title : "👋 I'm Alex"
+  title : "👋 I'm Alex, Analytics Dev @ SimpsonScarborough"
   image : "images/headshot.jpg"
-  content : "How do we measure and quantify a brand? How do we elevate brand analytics beyond vanity metrics and into actionable strategy? How do we conduct brand and market research ethically? 
+  content : "
   
-  <br>
-  <br>
-  
-I have worked with dozens of higher ed institutions to solve for these challenges. Higher Ed marketing and brand research must get smarter. That requires a marriage of technical expertise and thoughtful strategy. It requires us to see the world of data around us, and the know-how to activate it. Data drives more informed insights. Better insights lead to more relevant strategy, and better strategy ultimately provides the best experience for our clients and customers.
+How do we make better decisions using data? How can we build to improve student experience and outcomes? I believe data empowered decision making only comes about intentionally. I build data products and infrastructure to enable leaders with the information they need. I believe in democratizing information. I’m an advocate for education.
+
+<br>
+<br>
+
+My name’s Alex Ahlstrom and I’m the Analytics Developer at SimpsonScarborough. During my time at SimpsonScarborough, I’ve helped grow the analytics team from one person in 2020 to five. I built our data tech stack that services dozens of clients, and data products. I’m leading design of SimpsonScarborough’s brand equity index. My passion for my work stems from my belief that better data provides better and more equitable outcomes. As the son of educators, I know the power of education. While studying development economics at American University, and time living in Madagascar, I came to understand that education is an unrivaled force for good, and unparalleled in its ability to expand opportunity.
+
+<br>
+<br>
+
+Educators need to be able to make better decisions. They need insights at their fingertips without the effort of costly analysis. I build products that are force multipliers for the institutions I work with – allowing them to focus on what matters most – delivering for students. In my approach to data, I have 3 guiding principles that set me apart – equity, innovation, creativity. <a href="https://www.w3schools.com">Learn more about how I think about data</a>
+
 "
 
 
