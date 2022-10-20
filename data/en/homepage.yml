@@ -96,7 +96,7 @@ blog:
 ########################### Talk ##############################
 talk:
   enable : true
-  title : "Upcoming Presentations"
+  title : "Presentations"
   # talk item comes from `content/**/talks/` folder.
 
 ########################## Contact ############################
