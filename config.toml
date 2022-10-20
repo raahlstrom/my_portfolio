@@ -102,6 +102,10 @@ title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
 link = "https://linkedin.com/in/alex-ahlstrom-140214135"
 
+[[params.social]]
+title = "github"
+icon = "ti-github" # themify icon : https://themify.me/themify-icons
+link = "https://github.com/raahlstrom"
 
 ################################### English language #####################################
 [Languages.en]
