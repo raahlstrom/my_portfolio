@@ -14,18 +14,26 @@
   }
 }
 
+.navbar-dark .navbar-nav {
+  position: relative;
+
+  .nav-underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: $primary-color;
+    transition: all 0.4s ease;
+    pointer-events: none;
+  }
+}
+
+
 .navbar-dark .navbar-nav .nav-link {
   color: $text-color;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 10px;
-  text-decoration-color: transparent;
-
-  &:hover {
-    text-decoration: underline;
-    text-decoration-color: $primary-color;
-    text-underline-offset: 10px;
-    color: $text-color;
-  }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -34,3 +42,4 @@
     padding: 10px 0;
   }
 }
+

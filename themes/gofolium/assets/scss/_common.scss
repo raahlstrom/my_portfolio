@@ -153,7 +153,7 @@ p:empty{
 
 .typewriter {
   color:#0000;
-  font-family: $monospace-font;
+  font-family: $secondary-font;
   background:
     linear-gradient(-90deg,$secondary-color 5px,#0000 0) 10px 0,
     linear-gradient($text-color-light 0 0) 0 0;
@@ -164,6 +164,22 @@ p:empty{
   animation: 
    b .7s infinite steps(1),   
    t calc(var(--n)*.125s) steps(var(--n)) forwards;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 2.25px;
+  height: 1.2em;
+  background-color: $secondary-color;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: bottom;
+  position: relative;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
 }
 
 @keyframes t{

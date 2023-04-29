@@ -194,11 +194,103 @@
 	});
 
 
-	// Accordions
-	$('.collapse').on('shown.bs.collapse', function () {
-		$(this).parent().find('.ti-plus').removeClass('ti-plus').addClass('ti-minus');
-	}).on('hidden.bs.collapse', function () {
-		$(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
-	});
+// Accordions
+  $('.collapse').on('shown.bs.collapse', function () {
+    $(this).parent().find('.ti-plus').removeClass('ti-plus').addClass('ti-minus');
+  }).on('hidden.bs.collapse', function () {
+    $(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
+  });
 
+  // Smooth underline transition for navbar
+  $(document).ready(function () {
+    const $navLinks = $('.navbar-dark .navbar-nav .nav-link');
+    const $navBarUnderline = $('.navbar-dark .navbar-nav .nav-underline');
+
+    $navLinks.hover(
+      function () {
+        const left = $(this).position().left + ($(this).innerWidth() - $(this).width()) / 2 - 5; // Add -5 to left
+        const width = $(this).width() + 10; // Add 10 to width
+        $navBarUnderline.css({ left: left, width: width });
+      },
+      function () {
+        $navBarUnderline.css({ width: 0 });
+      }
+    );
+  });
+  
+  // pagination
+  
+  window.onload = function(){
+  var paginationPage = parseInt($('.cdp').attr('actpage'), 10);
+  $('.cdp_i').on('click', function(){
+    var go = $(this).attr('href').replace('#!', '');
+    if (go === '+1') {
+      paginationPage++;
+    } else if (go === '-1') {
+      paginationPage--;
+    }else{
+      paginationPage = parseInt(go, 10);
+    }
+    $('.cdp').attr('actpage', paginationPage);
+  });
+};
+  // typewriter
+  
+  const sentences = [
+  'Data empowered.',
+  'Higher Ed Innovator.',
+  'Building data products & analytics at SimpsonScarborough.'
+];
+
+const typewriterElement = document.getElementById('typewriter');
+
+function typeSentence(sentence, callback) {
+  let index = 0;
+
+  function type() {
+    typewriterElement.textContent += sentence[index];
+    index++;
+
+    if (index < sentence.length) {
+      setTimeout(type, 100);
+    } else {
+      setTimeout(() => {
+        callback();
+      }, 1500);
+    }
+  }
+
+  type();
+}
+
+function deleteSentence(callback) {
+  function del() {
+    typewriterElement.textContent = typewriterElement.textContent.slice(0, -1);
+
+    if (typewriterElement.textContent.length > 0) {
+      setTimeout(del, 100);
+    } else {
+      setTimeout(() => {
+        callback();
+      }, 1500);
+    }
+  }
+
+  del();
+}
+
+function runTypewriter(sentences) {
+  const [first, ...rest] = sentences;
+
+  typeSentence(first, () => {
+    deleteSentence(() => {
+      runTypewriter([...rest, first]);
+    });
+  });
+}
+
+runTypewriter(sentences);
+
+  
 })(jQuery);
+

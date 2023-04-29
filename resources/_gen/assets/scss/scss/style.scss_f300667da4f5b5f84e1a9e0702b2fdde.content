@@ -101,9 +101,24 @@ h6,
   position: relative;
   z-index: 1;
   transition: .2s ease; }
-  .btn:hover, .btn:active, .btn:focus {
+  .btn:hover, .btn:focus {
     outline: 0;
     box-shadow: none !important; }
+
+.btn:active {
+  outline: 0;
+  box-shadow: none !important;
+  animation: burst .2s;
+  transition: .2s ease; }
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+  background-color: transparent;
+  border: 3px solid #15E600;
+  color: #15E600;
+  animation: burst .2s;
+  transition: .2s ease; }
 
 .btn-link {
   padding: 0;
@@ -144,12 +159,23 @@ h6,
   color: #15E600;
   animation: pulse 1s infinite;
   transition: .3s; }
+  .btn-primary:hover:focus {
+    outline: 0;
+    box-shadow: none !important; }
 
 @keyframes pulse {
   0% {
     transform: scale(1); }
   70% {
     transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes burst {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
   100% {
     transform: scale(1); } }
 
@@ -274,13 +300,26 @@ p:empty {
 
 .typewriter {
   color: #0000;
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(-90deg, #D100E6 5px, #0000 0) 10px 0, linear-gradient(#999 0 0) 0 0;
   background-size: calc(var(--n)*1ch) 200%;
   -webkit-background-clip: padding-box,text;
   background-clip: padding-box,text;
   background-repeat: no-repeat;
   animation: b 0.7s infinite steps(1), t calc(var(--n)*.125s) steps(var(--n)) forwards; }
+
+.blinking-cursor {
+  display: inline-block;
+  width: 2.25px;
+  height: 1.2em;
+  background-color: #D100E6;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: bottom;
+  position: relative; }
+
+@keyframes blink {
+  50% {
+    background-color: transparent; } }
 
 @keyframes t {
   from {
@@ -301,16 +340,22 @@ p:empty {
   @media (max-width: 991px) {
     .nav-lang {
       margin: 10px auto; } }
+.navbar-dark .navbar-nav {
+  position: relative; }
+  .navbar-dark .navbar-nav .nav-underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #15E600;
+    transition: all 0.4s ease;
+    pointer-events: none; }
+
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-color: transparent; }
-  .navbar-dark .navbar-nav .nav-link:hover {
-    text-decoration: underline;
-    text-decoration-color: #15E600;
-    text-underline-offset: 10px;
-    color: #fff; }
+  text-decoration: none;
+  text-underline-offset: 10px; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 20px 15px; }
@@ -369,28 +414,58 @@ textarea.form-control {
   height: 180px; }
 
 .pagination {
-  justify-content: center; }
-  .pagination .page-item .page-link {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 0;
-    background: #0F0F0F;
-    text-align: center;
-    padding: 0;
-    font-weight: 600;
-    margin-right: 10px;
-    border: 0;
-    color: #15E600; }
-    .pagination .page-item .page-link:hover {
-      background: #15E600;
-      color: #fff; }
-  .pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
-    border-radius: 0; }
-  .pagination .page-item.active .page-link {
-    background: #15E600;
-    color: #fff; }
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  /* Set the font size for the page numbers */
+  padding: 20px 0;
+  text-align: center; }
+
+.page-item {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 3px 6px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 5px;
+  line-height: 38px;
+  padding: 0;
+  font-weight: 600;
+  color: #15E600;
+  text-decoration: none !important;
+  background-color: transparent;
+  transition: .3s; }
+
+.page-item:hover {
+  background-color: transparent;
+  color: #15E600;
+  text-decoration: underline #15E600;
+  animation: pulse 1s infinite;
+  transition: .3s; }
+
+.page-item:active {
+  animation: burst .2s;
+  transition: .2s ease; }
+
+.page-item:first-child,
+.page-item:last-child {
+  padding: 0 16px;
+  margin: 0 12px 6px; }
+
+.page-item.active,
+.page-item.disabled,
+.page-link {
+  background-color: transparent !important;
+  border: none !important;
+  color: #15E600 !important; }
+
+.page-item.disabled {
+  display: none; }
+
+.page-item.active {
+  text-decoration: underline #D100E6; }
 
 .content * {
   word-break: break-word;

@@ -2,7 +2,6 @@
 banner:
   enable : true
   title :  "how do we build **data products** that power **data-driven** action?"
-  subtitle : "Building data products & analytics at SimpsonScarborough. Data empowerment. Higher Ed Innovator."
   social : true
   # social icons comes from `config.toml` file.
 
