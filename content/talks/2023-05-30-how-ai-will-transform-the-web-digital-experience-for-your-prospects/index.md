@@ -1,7 +1,7 @@
 ---
 title: 'Keynote: How AI Will Transform the Web & Digital Experience for Your Prospects'
 author: ''
-date: '2023-06-20'
+date: '2023-05-31'
 slug: []
 categories: []
 image: "talks/2023-05-31-don-t-just-crunch-numbers-set-them-free-a-guide-to-data-empowerment/images/dc.jpg" 
