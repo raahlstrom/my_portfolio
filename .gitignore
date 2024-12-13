@@ -1,4 +1,11 @@
+# R-related ignores
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Hugo build output
+public/
+
+# Netlify cache
+netlify/
