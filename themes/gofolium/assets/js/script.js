@@ -186,8 +186,8 @@
     // Typewriter
     const sentences = [
         'Data empowered.',
-        'Higher Ed Innovator.',
-        'Building data products & analytics at SimpsonScarborough.'
+        'MBA and MEd Candidate.',
+        'Envisioning the future of education.'
     ];
 
     const typewriterElement = document.getElementById('typewriter');
