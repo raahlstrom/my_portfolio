@@ -3,26 +3,3 @@
 .Rhistory
 .RData
 .Ruserdata
-
-# Hugo build output
-public/
-
-# Netlify cache
-netlify/
-content/talks/2023-05-31-don-t-just-crunch-numbers-set-them-free-a-guide-to-data-empowerment/index.md
-content/talks/2023-05-30-how-ai-will-transform-the-web-digital-experience-for-your-prospects/index.md
-content/talks/2023-04-25-ga4-migration-panel/index.md
-content/talks/2022-07-23-higheredweb-2022-when-google-analytics-gives-you-lemons-make-lemonade/index.md
-content/projects/_index.md
-content/projects/2022-10-02-website-heatmap-dashboard/index.md
-content/projects/2022-10-01-covid19-college-reopening-dashboard/index.md
-content/projects/2022-10-01-cmo-study-dashboard/index.md
-content/blogs/_index.md
-content/blogs/2023-01-09-prometheus-university-the-first-problems/index.md
-content/blogs/2023-01-09-prometheus-university-the-beginning/index.md
-content/blogs/2023-01-09-introducing-prometheus-university/index.md
-content/blogs/2022-10-19-beyond-scroll-depth/index.md
-content/blogs/2022-10-19-better-analytics-with-empirical-bayes-estimation/index.md
-content/blogs/2022-10-11-good-to-great-becoming-a-ga4-power-user-by-understanding-the-events-based-data-model/index.md
-content/blogs/2022-10-05-why-data-matters/index.md
-content/blogs/2022-10-01-nsc-enrollment-data-deep-dive/index.md
