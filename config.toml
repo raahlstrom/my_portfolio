@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://alexahlstrom.io"
+baseURL = "https://alex-ahlstrom.com"
 title = "Alex Ahlstrom"
 theme = "gofolium"
 # post pagination
