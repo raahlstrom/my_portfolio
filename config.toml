@@ -93,11 +93,6 @@ link = "https://drive.google.com/file/d/1vT3-R_oZkQTHNOBYv6RTQwf2bxoUUY3C/view"
 ############################# social site ########################
 
 [[params.social]]
-title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/AlexAhlstrom"
-
-[[params.social]]
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
 link = "https://linkedin.com/in/alex-ahlstrom-140214135"
