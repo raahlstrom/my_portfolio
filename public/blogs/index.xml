@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thought Leadership on Alex Ahlstrom</title>
+    <link>https://alexahlstrom.io/blogs/</link>
+    <description>Recent content in Thought Leadership on Alex Ahlstrom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2024 Alex Ahlstrom</copyright>
+    <lastBuildDate>Sat, 14 Mar 2020 15:40:24 +0600</lastBuildDate><atom:link href="https://alexahlstrom.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus University: The First Problems</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-first-problems/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-first-problems/</guid>
+      <description>Prometheus.edu is where I&amp;rsquo;ve started running into trouble. I think this was partially my fault, although it was interesting to kick the tires on chatGPT and start to hear where things rattle about a bit.</description>
+    </item>
+    
+    <item>
+      <title>Prometheus University: The Beginning</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-beginning/</link>
+      <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-beginning/</guid>
+      <description>I&amp;rsquo;m not a web developer (although I have some experience in this area).</description>
+    </item>
+    
+    <item>
+      <title>Introducing Prometheus University</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-introducing-prometheus-university/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-introducing-prometheus-university/</guid>
+      <description>Prometheus University is the first, fully AI generated university.
+I&amp;rsquo;ve been tweeting and thinking a lot about chatGPT lately.</description>
+    </item>
+    
+    <item>
+      <title>Better Analytics with Empirical Bayes Estimation</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-19-better-analytics-with-empirical-bayes-estimation/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-19-better-analytics-with-empirical-bayes-estimation/</guid>
+      <description>Are you accounting for uncertainty in your paid media and digital reporting?</description>
+    </item>
+    
+    <item>
+      <title>Beyond Scroll Depth</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-19-beyond-scroll-depth/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-19-beyond-scroll-depth/</guid>
+      <description>Percent scroll depth is a bad metric.
+% Scroll depth is one of the most common ways we measure webpage content engagement.</description>
+    </item>
+    
+    <item>
+      <title>Good to Great: Becoming a GA4 Power User by Understanding the Events Based Data Model</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-11-good-to-great-becoming-a-ga4-power-user-by-understanding-the-events-based-data-model/</link>
+      <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-11-good-to-great-becoming-a-ga4-power-user-by-understanding-the-events-based-data-model/</guid>
+      <description>What separates good from great GA4 users?
+One of the hardest components to master is the new events-based data model in GA4.</description>
+    </item>
+    
+    <item>
+      <title>Why Data Matters</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-05-why-data-matters/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-05-why-data-matters/</guid>
+      <description>Few things have had a greater impact on how I think about data than Catherine D’Ignazio and Lauren F.</description>
+    </item>
+    
+    <item>
+      <title>NSC Enrollment Data Deep Dive</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-01-nsc-enrollment-data-deep-dive/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-01-nsc-enrollment-data-deep-dive/</guid>
+      <description>Historically, Higher Education has been resilient during times of economic downturn.</description>
+    </item>
+    
+  </channel>
+</rss>

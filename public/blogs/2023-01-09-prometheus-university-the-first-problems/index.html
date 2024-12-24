@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Prometheus University: The First Problems</title>
+  
+  <!-- Google Tag Manager -->
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MC6F7W8');</script>
+
+  
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="In this blog post, the author describes their experience using chatGPT to build a university website from scratch. They discuss the process of using chatGPT in multiple simultaneous conversations to perform different tasks, the challenges of using chatGPT for large coding projects, and the limitations of chatGPT in terms of strategic thinking and design. The author also reflects on the potential of chatGPT as a tool for developers to be more efficient and effective, but notes that chatGPT is not a replacement for human skills in design and architecture. This blog post offers a practical exploration of the capabilities and limitations of chatGPT in web development.">
+  <meta name="author" content="Alex Ahlstrom">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://alexahlstrom.io/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://alexahlstrom.io/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://alexahlstrom.io/scss/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://alexahlstrom.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://alexahlstrom.io/images/favicon.svg" type="image/x-icon">
+  
+</head><body>
+  <!-- Google Tag Manager -->
+  
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MC6F7W8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+	<div id="particles-js"></div>
+	<!-- navigation -->
+<header class="sticky-top bg-black">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <a class="navbar-brand" href="/"><img class="img-fluid"
+          src="https://alexahlstrom.io/images/logo.png" alt="Alex Ahlstrom"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu text-white"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          
+
+          
+          <li class="nav-item"><a class="nav-link" href="/#home">home</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#about">about</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#project">projects</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#blog">thought leadership</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#talk">presentations</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#contact">contact</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            
+            
+          </li>
+          
+          <div class="nav-underline"></div>
+        </ul>
+
+        
+        <!-- navigation button -->
+        <a href="https://drive.google.com/file/d/1vT3-R_oZkQTHNOBYv6RTQwf2bxoUUY3C/view" target="_blank"
+          class="btn btn-primary ml-lg-4">resume</a>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+	<section class="section">
+  <div class="container text-left text-sm-center">
+    <h2>Prometheus University: The First Problems</h2>
+  </div>
+</section>
+	
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <article class="col-lg-8 col-md-10 mx-auto" data-file="https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-first-problems/" data-target="article">
+        <div class="text-center">
+         
+          <ul class="list-inline mb-3">
+            <li class="list-inline-item"><i class="text-primary ti-calendar mr-2"></i>23 Jan, 2023</li>
+            <li class="list-inline-item"><i class="text-primary ti-time mr-2"></i><span class="eta"></span> read</li>
+            
+          </ul>
+          
+        </div>
+        <div class="content mt-5">
+          <p>Prometheus.edu is where I&rsquo;ve started running into trouble. I think this was partially my fault, although it was interesting to kick the tires on chatGPT and start to hear where things rattle about a bit. There were several things that slowed my progress. First, the task is far more complicated. I want to create a working website that resembles one you&rsquo;d find for any college or university. To do this I opened three chats simultaneously. One was my &ldquo;strategist&rdquo; feed (this is who developed my brand platform). One was my &ldquo;UX designer&rdquo; and one was my &ldquo;developer&rdquo;. I&rsquo;ve found in the past that if you try to do everything in one conversation, ChatGPT gets too smart for its own good and tries to pull in things from parts of your conversation that you don&rsquo;t necessarily want it to. One thing I&rsquo;ve learned when using this tool (and from my general idea of how these systems work) is that you want to condition the algorithm to become a certain kind of &ldquo;agent&rdquo;.</p>
+<p>The T in GPT stands for transformer. It&rsquo;s a super crazy innovative bit of technology that is part of what makes chatGPT so smart. The thing that makes transformers revolutionary is that they can recall back to earlier in the conversation. I&rsquo;ll let chatGPT give a more detailed explanation. &ldquo;ChatGPT explain transformers in AI in a non-technical way that someone unfamiliar with AI would understand&rdquo;. A transformer is a type of artificial intelligence model that is used to process and understand natural language&hellip; It works by analyzing the patterns and relationships within a large dataset of text and using this information to &ldquo;transform&rdquo; the input in a way that allows it to perform a specific task&hellip;One of the key features of transformers is that they are able to &ldquo;attend&rdquo; to different parts of the input at the same time, which allows them to capture complex relationships and connections within the data&quot;. Essentially if you have too many conversation threads going simultaneously, this &ldquo;attention&rdquo; can become a problem, and all the sudden you have the developer giving you design advice (not good!).</p>
+<p>I began by asking my developer to tell me how to build a site using github pages (where I&rsquo;m going to host this because it&rsquo;s easy and I already am comfortable with github from my real work). It actually gave amazingly clear instructions. + 1 Point chatGPT. I then asked it to help me device a simple file structure for my website which it did, nothing too exciting.</p>
+<p>Ok, but here&rsquo;s where it got tricky - I want to see how far I can get just building. No CMS, no sophisticated coding environment. Just me and chatGPT. I quickly realized how daunting this was. Again, I don&rsquo;t build websites. I have built a little personal one, but nothing so big and complicated, and never without a template. I wasn&rsquo;t sure where to start. I asked my UX designer chatGPT to give me the description of my homepage. On the one hand, I was pretty impressed, what it delivered sounds pretty similar to many higher ed websites I&rsquo;ve worked with. At the same time though it was really unimaginative, and I had asked it to give me descriptions of what should go in each section, but it mostly delivered simple ideas like &ldquo;add some text and images&rdquo;. Not impressive. It was describing a simple higher ed website, but it wasn&rsquo;t synthesizing anything strategic for me. My developer wasn&rsquo;t having any more luck. I quickly realized one of the big challenges with using chatGPT for coding large projects like a website is its inability to think about my whole codebase. It would quickly meet its word count when setting up an HTML or CSS template, for instance. ChatGPT is great at helping developers be better/faster/more efficient (trust me I know, I wrote the longest, most complex regex of my career with chatGPT the other day, it was awesome!!). But it&rsquo;s not good at the skills that really make a great web developer - the ability to design and interconnect vast, complex systems into a logical architecture. I found myself using too much of my own knowledge Frankenstein-ing together the various bits of code GPT gave me into something workable. It was still surprisingly good at creating code for me (I asked it to create a mega menu and I did, WOW!), but the dream of chatGPT simply building my website for me based on nothing more than written instructions seemed elusive&hellip;for now.</p>
+<p>In essence, the three big problems I faced were</p>
+<p>1.) writing code for a massive program (website) in chatGPT that has code living across multiple files simultaneously, inserting new components to my code all while maintaining the functionality and extensibility of what I&rsquo;d already developed.</p>
+<p>2.) I needed to think more about how to give GPT commands. I couldn&rsquo;t just jump in at the middle. I needed to think through how to build a website and then leverage GPT where appropriate. For instance, I wasn&rsquo;t going to be able to just tell it to spit out a homepage design and then code it for me. I was going to need to build my component library, basic page templates, and then use these elements to build my site. ChatGPT sometimes feels like a super brainy toddler. I need to cut up its food for it.</p>
+<p>3.) I needed to find a way to get chatGPT to think strategically. I&rsquo;m not a designer, can chatGPT be one? Or would I only be able to make it design the most bland straightforward school website imaginable? At the time of writing this I&rsquo;m not sure, but when I try this all out I&rsquo;ll keep you posted, otherwise this will be a very very quick experiment!!!</p>
+
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <ul class="list-inline social-icons mb-5">
+          
+          <li class="list-inline-item"><a href="https://linkedin.com/in/alex-ahlstrom-140214135"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://github.com/raahlstrom"><i class="ti-github"></i></a></li>
+          
+        </ul>
+        <hr class="mx-auto border-default" style="width: 90px;">
+        <p class="mt-5">Copyright © 2024 Alex Ahlstrom</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://alexahlstrom.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/particles/particles.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/particles/stats.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/reading-time/readingTime.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://alexahlstrom.io/js/script.min.js"></script>
+
+<!-- google analitycs -->
+</body>
+
+</html>

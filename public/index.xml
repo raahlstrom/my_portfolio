@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Ahlstrom</title>
+    <link>https://alexahlstrom.io/</link>
+    <description>Recent content on Alex Ahlstrom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2024 Alex Ahlstrom</copyright>
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://alexahlstrom.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t just crunch numbers, set them free: A guide to data empowerment</title>
+      <link>https://alexahlstrom.io/talks/2023-05-31-don-t-just-crunch-numbers-set-them-free-a-guide-to-data-empowerment/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/talks/2023-05-31-don-t-just-crunch-numbers-set-them-free-a-guide-to-data-empowerment/</guid>
+      <description>Conference Talk Description
+In a world where data is abundant, organizations must go beyond metrics and KPIs to become truly data-empowered.</description>
+    </item>
+    
+    <item>
+      <title>Keynote: How AI Will Transform the Web &amp; Digital Experience for Your Prospects</title>
+      <link>https://alexahlstrom.io/talks/2023-05-30-how-ai-will-transform-the-web-digital-experience-for-your-prospects/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/talks/2023-05-30-how-ai-will-transform-the-web-digital-experience-for-your-prospects/</guid>
+      <description>Keynote Conference Page
+AI tools like chatGPT and bing chat are going to affect how prospective students conduct their college search.</description>
+    </item>
+    
+    <item>
+      <title>GA4 Migration Panel</title>
+      <link>https://alexahlstrom.io/talks/2023-04-25-ga4-migration-panel/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/talks/2023-04-25-ga4-migration-panel/</guid>
+      <description>Analytics Panel Link
+This panel discussion is hosted on Google Meet to allow for enhanced attendee participation.</description>
+    </item>
+    
+    <item>
+      <title>Prometheus University: The First Problems</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-first-problems/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-first-problems/</guid>
+      <description>Prometheus.edu is where I&amp;rsquo;ve started running into trouble. I think this was partially my fault, although it was interesting to kick the tires on chatGPT and start to hear where things rattle about a bit.</description>
+    </item>
+    
+    <item>
+      <title>Prometheus University: The Beginning</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-beginning/</link>
+      <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-beginning/</guid>
+      <description>I&amp;rsquo;m not a web developer (although I have some experience in this area).</description>
+    </item>
+    
+    <item>
+      <title>Introducing Prometheus University</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-introducing-prometheus-university/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-introducing-prometheus-university/</guid>
+      <description>Prometheus University is the first, fully AI generated university.
+I&amp;rsquo;ve been tweeting and thinking a lot about chatGPT lately.</description>
+    </item>
+    
+    <item>
+      <title>Better Analytics with Empirical Bayes Estimation</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-19-better-analytics-with-empirical-bayes-estimation/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-19-better-analytics-with-empirical-bayes-estimation/</guid>
+      <description>Are you accounting for uncertainty in your paid media and digital reporting?</description>
+    </item>
+    
+    <item>
+      <title>Beyond Scroll Depth</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-19-beyond-scroll-depth/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-19-beyond-scroll-depth/</guid>
+      <description>Percent scroll depth is a bad metric.
+% Scroll depth is one of the most common ways we measure webpage content engagement.</description>
+    </item>
+    
+    <item>
+      <title>Good to Great: Becoming a GA4 Power User by Understanding the Events Based Data Model</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-11-good-to-great-becoming-a-ga4-power-user-by-understanding-the-events-based-data-model/</link>
+      <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-11-good-to-great-becoming-a-ga4-power-user-by-understanding-the-events-based-data-model/</guid>
+      <description>What separates good from great GA4 users?
+One of the hardest components to master is the new events-based data model in GA4.</description>
+    </item>
+    
+    <item>
+      <title>Why Data Matters</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-05-why-data-matters/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-05-why-data-matters/</guid>
+      <description>Few things have had a greater impact on how I think about data than Catherine D’Ignazio and Lauren F.</description>
+    </item>
+    
+    <item>
+      <title>CMO Study Dashboard</title>
+      <link>https://alexahlstrom.io/projects/2022-10-01-cmo-study-dashboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/projects/2022-10-01-cmo-study-dashboard/</guid>
+      <description>Each year SimpsonScarborough conducts a study on the experience of higher ed CMOs and their teams.</description>
+    </item>
+    
+    <item>
+      <title>COVID 19 - College Reopening Dashboard</title>
+      <link>https://alexahlstrom.io/projects/2022-10-01-covid19-college-reopening-dashboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/projects/2022-10-01-covid19-college-reopening-dashboard/</guid>
+      <description>In 2020 Higher Education was dealing with the unprecedented disruptions resulting from COVID-19.</description>
+    </item>
+    
+    <item>
+      <title>NSC Enrollment Data Deep Dive</title>
+      <link>https://alexahlstrom.io/blogs/2022-10-01-nsc-enrollment-data-deep-dive/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2022-10-01-nsc-enrollment-data-deep-dive/</guid>
+      <description>Historically, Higher Education has been resilient during times of economic downturn.</description>
+    </item>
+    
+    <item>
+      <title>Webpage Heatmap Dashboard</title>
+      <link>https://alexahlstrom.io/projects/2022-10-02-website-heatmap-dashboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/projects/2022-10-02-website-heatmap-dashboard/</guid>
+      <description>Have you ever wanted to see how users are interacting with your website?</description>
+    </item>
+    
+    <item>
+      <title>HigherEdWeb 2022: When Google Analytics Gives You Lemons, Make Lemonade</title>
+      <link>https://alexahlstrom.io/talks/2022-07-23-higheredweb-2022-when-google-analytics-gives-you-lemons-make-lemonade/</link>
+      <pubDate>Wed, 20 Jul 2022 15:40:24 +0600</pubDate>
+      
+      <guid>https://alexahlstrom.io/talks/2022-07-23-higheredweb-2022-when-google-analytics-gives-you-lemons-make-lemonade/</guid>
+      <description>Chances are — if you&amp;rsquo;re doing web analytics — you&amp;rsquo;re using Google Universal Analytics.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Better Analytics with Empirical Bayes Estimation</title>
+  
+  <!-- Google Tag Manager -->
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MC6F7W8');</script>
+
+  
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Using Empirical Bayes Estimation better approximates actual values when sample sizes vary between the samples being compared.">
+  <meta name="author" content="Alex Ahlstrom">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://alexahlstrom.io/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://alexahlstrom.io/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://alexahlstrom.io/scss/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://alexahlstrom.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://alexahlstrom.io/images/favicon.svg" type="image/x-icon">
+  
+</head><body>
+  <!-- Google Tag Manager -->
+  
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MC6F7W8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+	<div id="particles-js"></div>
+	<!-- navigation -->
+<header class="sticky-top bg-black">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <a class="navbar-brand" href="/"><img class="img-fluid"
+          src="https://alexahlstrom.io/images/logo.png" alt="Alex Ahlstrom"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu text-white"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          
+
+          
+          <li class="nav-item"><a class="nav-link" href="/#home">home</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#about">about</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#project">projects</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#blog">thought leadership</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#talk">presentations</a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="/#contact">contact</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            
+            
+          </li>
+          
+          <div class="nav-underline"></div>
+        </ul>
+
+        
+        <!-- navigation button -->
+        <a href="https://drive.google.com/file/d/1vT3-R_oZkQTHNOBYv6RTQwf2bxoUUY3C/view" target="_blank"
+          class="btn btn-primary ml-lg-4">resume</a>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+	<section class="section">
+  <div class="container text-left text-sm-center">
+    <h2>Better Analytics with Empirical Bayes Estimation</h2>
+  </div>
+</section>
+	
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <article class="col-lg-8 col-md-10 mx-auto" data-file="https://alexahlstrom.io/blogs/2022-10-19-better-analytics-with-empirical-bayes-estimation/" data-target="article">
+        <div class="text-center">
+         
+          <ul class="list-inline mb-3">
+            <li class="list-inline-item"><i class="text-primary ti-calendar mr-2"></i>22 Oct, 2022</li>
+            <li class="list-inline-item"><i class="text-primary ti-time mr-2"></i><span class="eta"></span> read</li>
+            
+          </ul>
+          
+        </div>
+        <div class="content mt-5">
+          <p>Are you accounting for uncertainty in your paid media and digital reporting?</p>
+<p>One of the biggest shifts for when I moved from my survey research role to the analytics work I do now was the transitioning from plotting out the journey to piloting the ship. In analytics we need to communicate a lot of data, continuously, and recommend optimizations off of it. Your caveats, &ldquo;it depends&rdquo;, and &ldquo;on the other hand&rdquo;, can get lost. You need to spot icebergs and storms before your team runs into them.</p>
+<p>In paid media and digital, we need to make decisions - one or two numbers that point us in the right direction. Nowhere is this more evident than in the wide use of KPIs as benchmarked averages to compare against.</p>
+<p>At first I tried to solve this with more complex visuals, but again, when you&rsquo;re piloting the ship, when money is going out the door, and when the technical experience of your audience varies widely, you need something more directional.</p>
+<p>I want to propose one solution today - empirical bayes estimation. Ok, I know what you&rsquo;re thinking. I just spent all this time talking about how NOT to be overly technical, and now I&rsquo;m talking about bayes theorem?!</p>
+<p>Bayesian techniques are really cool because they work the way our brains do. They allows you to start with what you expect to happen and then updates that assumption as you have more data. This isn&rsquo;t a how-to, but I want to explain why you should consider this approach.</p>
+<p>Let&rsquo;s look at an example - say you have two channels, search and display. You are optimizing for clicks so you&rsquo;re looking at click through rate. Let&rsquo;s say search has a CTR of 5%, display is 3%. It might appear search is performing far better than display. CTR can be misleading though. It is a success rate calculation. For instance, I may make a pull up jump shot (success rate 100%), but that does NOT make me a better shooting guard than James Harden. True success is repeated success, and that&rsquo;s what bayes lets us quantify.</p>
+<p>Returning to our example above, let&rsquo;s say search has only generated 50 total clicks, while display has generated 1000. Using empirical bayes, the adjusted CTR might look much closer to a tie - search is 3.2%, display is 2.9%. Still a simple KPI, but smarter.</p>
+<p>This thread is meant to be a proof of concept, not a how-to (although if there&rsquo;s interest I&rsquo;d defintely consider showing the math!!!), but I hope it gives you some ideas about how to elevate your reporting KPIs to better reflect uncertainty, and drive more data empowered decisions!</p>
+
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <ul class="list-inline social-icons mb-5">
+          
+          <li class="list-inline-item"><a href="https://linkedin.com/in/alex-ahlstrom-140214135"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://github.com/raahlstrom"><i class="ti-github"></i></a></li>
+          
+        </ul>
+        <hr class="mx-auto border-default" style="width: 90px;">
+        <p class="mt-5">Copyright © 2024 Alex Ahlstrom</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://alexahlstrom.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/particles/particles.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/particles/stats.min.js"></script>
+
+<script src="https://alexahlstrom.io/plugins/reading-time/readingTime.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://alexahlstrom.io/js/script.min.js"></script>
+
+<!-- google analitycs -->
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prometheus_university on Alex Ahlstrom</title>
+    <link>https://alexahlstrom.io/tags/prometheus_university/</link>
+    <description>Recent content in prometheus_university on Alex Ahlstrom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2024 Alex Ahlstrom</copyright>
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://alexahlstrom.io/tags/prometheus_university/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus University: The First Problems</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-first-problems/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-first-problems/</guid>
+      <description>Prometheus.edu is where I&amp;rsquo;ve started running into trouble. I think this was partially my fault, although it was interesting to kick the tires on chatGPT and start to hear where things rattle about a bit.</description>
+    </item>
+    
+    <item>
+      <title>Prometheus University: The Beginning</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-beginning/</link>
+      <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-prometheus-university-the-beginning/</guid>
+      <description>I&amp;rsquo;m not a web developer (although I have some experience in this area).</description>
+    </item>
+    
+    <item>
+      <title>Introducing Prometheus University</title>
+      <link>https://alexahlstrom.io/blogs/2023-01-09-introducing-prometheus-university/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/blogs/2023-01-09-introducing-prometheus-university/</guid>
+      <description>Prometheus University is the first, fully AI generated university.
+I&amp;rsquo;ve been tweeting and thinking a lot about chatGPT lately.</description>
+    </item>
+    
+  </channel>
+</rss>

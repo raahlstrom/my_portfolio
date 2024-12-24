@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Alex Ahlstrom</title>
+    <link>https://alexahlstrom.io/projects/</link>
+    <description>Recent content in Projects on Alex Ahlstrom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2024 Alex Ahlstrom</copyright>
+    <lastBuildDate>Sat, 14 Mar 2020 15:40:24 +0600</lastBuildDate><atom:link href="https://alexahlstrom.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CMO Study Dashboard</title>
+      <link>https://alexahlstrom.io/projects/2022-10-01-cmo-study-dashboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/projects/2022-10-01-cmo-study-dashboard/</guid>
+      <description>Each year SimpsonScarborough conducts a study on the experience of higher ed CMOs and their teams.</description>
+    </item>
+    
+    <item>
+      <title>COVID 19 - College Reopening Dashboard</title>
+      <link>https://alexahlstrom.io/projects/2022-10-01-covid19-college-reopening-dashboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/projects/2022-10-01-covid19-college-reopening-dashboard/</guid>
+      <description>In 2020 Higher Education was dealing with the unprecedented disruptions resulting from COVID-19.</description>
+    </item>
+    
+    <item>
+      <title>Webpage Heatmap Dashboard</title>
+      <link>https://alexahlstrom.io/projects/2022-10-02-website-heatmap-dashboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexahlstrom.io/projects/2022-10-02-website-heatmap-dashboard/</guid>
+      <description>Have you ever wanted to see how users are interacting with your website?</description>
+    </item>
+    
+  </channel>
+</rss>
