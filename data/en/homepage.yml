@@ -132,4 +132,4 @@ contact_info:
 
     # contact item loop
     - icon : "ti-location-pin" # themify icon : https://themify.me/themify-icons
-      id : "Charllotesville, Virginia"
+      id : "Charlottesville, Virginia"
