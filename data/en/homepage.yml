@@ -1,7 +1,7 @@
 ######################### Banner ###########################
 banner:
   enable : true
-  title :  "how do we build **data products** that power **data-driven** action?"
+  title :  "how do we tackle **complex problems** to create **lasting change**?"
   social : true
   # social icons comes from `config.toml` file.
 
@@ -9,7 +9,7 @@ banner:
 ####################### About ##############################
 about:
   enable : true
-  title : "👋 I'm Alex, Analytics Dev @ SimpsonScarborough"
+  title : "👋 I'm Alex, MBA Candidate @ University of Virginia's Darden School of Business"
   image : "images/headshot.jpg"
   content : "
   
@@ -39,7 +39,15 @@ education:
     # education item loop
     - name : "BS in Economics"
       duration : "September 2016 - May 2019"
-      academy : "American University - Washington, D.C."
+      academy : "American University — Washington, D.C."
+
+    - name : "MBA"
+      duration : "August 2024 - May 2026"
+      academy : "University of Virginia, Darden School of Business — Charlottesville, V.A."
+
+    - name : "MEd (Innovation and Public Policy)"
+      duration : "May 2024 - May 2026"
+      academy : "University of Virginia — Charlottesville, V.A."
 
 ####################### Expertise ###########################
 expertise:
@@ -124,4 +132,4 @@ contact_info:
 
     # contact item loop
     - icon : "ti-location-pin" # themify icon : https://themify.me/themify-icons
-      id : "Arlington, Virginia"
+      id : "Charllotesville, Virginia"

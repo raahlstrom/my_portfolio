@@ -88,7 +88,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [params.navigation_button]
 enable = true
 label = "resume"
-link = "https://drive.google.com/file/d/1V40vYx03u1ANIepAY3FxaBPhn5WG_Pfj/view"
+link = "https://drive.google.com/file/d/1vT3-R_oZkQTHNOBYv6RTQwf2bxoUUY3C/view"
   
 ############################# social site ########################
 
@@ -114,4 +114,4 @@ languageCode = "en-us"
 contentDir = "content/"
 weight = 1
 # copyright
-copyright = "Copyright &copy; 2022 Alex Ahlstrom"
+copyright = "Copyright &copy; 2024 Alex Ahlstrom"
