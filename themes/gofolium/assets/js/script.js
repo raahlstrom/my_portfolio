@@ -109,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Initialize Glide.js Carousel
-  if (typeof Glide !== 'undefined') {
-    new Glide('.project-carousel', {
+  if (typeof Glide !== 'undefined' && document.querySelector('.glide')) {
+    new Glide('.glide', {
       type: 'carousel',
       autoplay: 5000,
       perView: 1,

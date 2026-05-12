@@ -115,12 +115,16 @@
       </div>
     </div>
     <!-- Carousel container -->
-    <div class="project-carousel">
-      {{ range (where .Site.RegularPages "Section" "==" "projects") }}
-      <div class="carousel-slide">
-        {{ .Render "project" }}
+    <div class="project-carousel glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          {{ range (where .Site.RegularPages "Section" "==" "projects") }}
+          <li class="glide__slide">
+            {{ .Render "project" }}
+          </li>
+          {{ end }}
+        </ul>
       </div>
-      {{ end }}
     </div>
     <div class="row">
       <div class="col-12 text-center mt-5">
