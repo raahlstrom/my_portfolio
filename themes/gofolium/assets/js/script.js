@@ -99,6 +99,15 @@ document.addEventListener('DOMContentLoaded', function() {
     runTypewriter();
   }
   
+  // Reading time estimate for blog posts
+  const article = document.querySelector('[data-target="article"]');
+  const etaEl = document.querySelector('.eta');
+  if (article && etaEl) {
+    const words = article.innerText.trim().split(/\s+/).length;
+    const minutes = Math.ceil(words / 200);
+    etaEl.textContent = minutes + ' min';
+  }
+
   // Initialize Glide.js Carousel
   if (typeof Glide !== 'undefined') {
     new Glide('.project-carousel', {

@@ -20,8 +20,6 @@ link = "plugins/themify-icons/themify-icons.css"
 # JS Plugins
 [[params.plugins.js]]
 link = "plugins/particles/particles.min.js"
-[[params.plugins.js]]
-link = "plugins/reading-time/readingTime.min.js"
 
 
 ############################## navigation ###############################
