@@ -3,11 +3,9 @@ baseURL = "https://alex-ahlstrom.com"
 title = "Alex Ahlstrom"
 theme = "gofolium"
 # post pagination
-paginate = "4"
+paginate = 4
 # post excerpt
-summaryLength = "10"
-# disable language
-disableLanguages = [true] # desable language from here
+summaryLength = 10
 
 # unsafe html
 [markup.goldmark.renderer]
@@ -17,19 +15,11 @@ unsafe = true
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
 link = "plugins/particles/particles.min.js"
-[[params.plugins.js]]
-link = "plugins/particles/stats.min.js"
 [[params.plugins.js]]
 link = "plugins/reading-time/readingTime.min.js"
 

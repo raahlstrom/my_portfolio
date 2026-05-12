@@ -1,8 +1,11 @@
-/*  typography */
+// _typography.scss
+// ---------------------------
+// Import Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
+// Base Typography
 body {
   line-height: 1.2;
   font-family: $secondary-font;
@@ -13,79 +16,47 @@ body {
 p,
 .paragraph {
   font-weight: 300;
-  color: $text-color-light;
   font-size: 18px;
   line-height: 1.7;
   font-family: $secondary-font;
+  color: $text-color-light;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $text-color;
+h1, h2, h3, h4, h5, h6 {
   font-family: $primary-font;
   font-weight: 700;
   line-height: 1.4;
+  color: $text-color;
 }
 
-h1,
-.h1 {
+// Responsive Heading Sizes
+h1, .h1 {
   font-size: 56px;
-  @include desktop {
-    font-size: 48px;
-  }
-  @include tablet {
-    font-size: 40px;
-  }
+  @include desktop { font-size: 48px; }
+  @include tablet { font-size: 40px; }
 }
 
-h2,
-.h2 {
+h2, .h2 {
   font-size: 48px;
-  @include desktop {
-    font-size: 40px;
-  }
-  @include tablet {
-    font-size: 32px;
-  }
+  @include desktop { font-size: 40px; }
+  @include tablet { font-size: 32px; }
 }
 
-h3,
-.h3 {
+h3, .h3 {
   font-size: 36px;
-  @include desktop {
-    font-size: 32px;
-  }
-  @include tablet {
-    font-size: 28px;
-  }
+  @include desktop { font-size: 32px; }
+  @include tablet { font-size: 28px; }
 }
 
-h4,
-.h4 {
+h4, .h4 {
   font-weight: 500;
   font-size: 24px;
 }
 
-h5,
-.h5 {
-  font-size: 18px;
-}
-
-h6,
-.h6 {
-  font-size: 14px;
-}
-
+h5, .h5 { font-size: 18px; }
+h6, .h6 { font-size: 14px; }
 
 .display-1 {
-  @include desktop {
-    font-size: 4.5rem;
-  }
-  @include tablet {
-    font-size: 3.5rem;
-  }
+  @include desktop { font-size: 4.5rem; }
+  @include tablet { font-size: 3.5rem; }
 }

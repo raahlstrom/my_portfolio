@@ -54,38 +54,19 @@ expertise:
   enable : true
   title : "Expertise"
   expertise_item:
-    # expertise item loop
-    - name : "Website Analytics"
-      content : "Google Analytics 4, Universal Analytics, Google Optimize, and Google Search Console"
-
-    # expertise item loop
-    - name : "Website Tracking"
-      content : "Google Tag Manager and JavaScript"
-      
-    # expertise item loop
-    - name : "Data Management, Administration, and ETL"
-      content : "Adverity, R Plumber, Google BigQuery, and Google Cloud"
-      
-    # expertise item loop
-    - name : "DevOps and Production"
-      content : "testthat, devtools, GitHub, and Google Cloud"
-      
-    # expertise item loop
-    - name : "Dashboarding and Visualization"
-      content : "Tableau, Google Data Studio, and R Shiny"
-
-    # expertise item loop
-    - name : "Data Wrangling, Analysis, and Visualization"
-      content : "R, ggplot2, tidyverse, tidymodels, SQL, and Excel"
-      
-    # expertise item loop
-    - name : "Survey Design and Programming"
-      content : "Qualtrics"
-      
-    # expertise item loop
-    - name : "Social Listening and Web Scraping"
-      content : "R, Rvest, Selenium, and BrandWatch"
-
+  - name : "Consumer & Behavioral Research"
+    content : "Conducted research using surveys, public/proprietary data, and psychographics, delivering actionable insights to top university leaders."
+  - name : "Data Analysis and Visualization"
+    content : "Built interactive dashboards and visualizations using Tableau and R, enabling stakeholders to make data-driven decisions."
+  - name : "Strategic Insights"
+    content : "Presented AI thought leadership, helping top institutions anticipate and adapt to the impacts of AI."
+  - name : "Product Development"
+    content : "Managed cross-functional team to create new agency products in brand measurement."
+  - name : "Team Leadership & DEI Initiatives"
+    content : "Founded LGBTQ+ Employee Resource Group and developed pay transparency and inclusive language standards, advancing organizational equity."
+  - name : "Innovation & Policy in Education"
+    content : "Graduate research investigating how to create durable innovation in education, with a focus on public policy and solutions scaling."
+   
 ########################## Projects ###########################
 project:
   enable : true

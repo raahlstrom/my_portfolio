@@ -1,47 +1,46 @@
-/* Button style */
-  .btn {
-    font-size: 16px;
-    font-family: $secondary-font;
-    text-transform: capitalize;
-    padding: 10px 25px;
-    border-radius: 5px;
-    border: 1px solid;
-    position: relative;
-    z-index: 1;
-    transition: .2s ease;
-    
-    &:hover,
-    &:focus {
-    outline: 0;
-    box-shadow: none !important;
+// _buttons.scss
+// ---------------------------
+// Base Button Styles
+.btn {
+  font-size: 16px;
+  font-family: $secondary-font;
+  text-transform: capitalize;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }
 
 .btn:active {
-  outline: 0;
-  box-shadow: none !important;
-  animation: burst .2s;
-  transition: .2s ease;
+  animation: burst 0.2s;
 }
 
 .btn:focus {
-  outline: 0;
-  box-shadow: none !important;
   background-color: transparent;
   border: 3px solid $primary-color;
   color: $primary-color;
-  animation: burst .2s;
-  transition: .2s ease;
+  animation: burst 0.2s;
 }
 
-.btn-link {
+// Link Buttons
+.btn-link,
+.btn-link-group a {
   padding: 0;
   color: $white;
   border: 0;
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-color: transparent;
-  &:hover{
+
+  &:hover {
     color: $white;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -49,63 +48,30 @@
   }
 }
 
-.btn-link-group {
-  a{
-    padding: 0;
-    color: $white;
-    border: 0;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-color: transparent;
-    &:hover{
-      color: $white;
-      text-decoration: underline;
-      text-underline-offset: 10px;
-      text-decoration-color: $primary-color;
-    }
-  }
-}
-
+// Primary Button
 .btn-primary {
   background-color: transparent;
   border: 3px solid $primary-color;
   color: $primary-color;
-  transition: .3s;
-}
+  transition: 0.3s;
 
-.btn-primary:hover {
-  text-decoration-color: transparent;
-  background-color: transparent;
-  border: 3px solid $primary-color;
-  color: $primary-color;
-  animation: pulse 1s infinite;
-  transition: .3s;
-  &:focus {
-    outline: 0;
-    box-shadow: none !important;
+  &:hover {
+    background-color: $primary-color !important;
+    border: 3px solid $primary-color !important;
+    color: $black !important;
+    animation: pulse 1s infinite;
   }
 }
 
+// Keyframe Animations
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  70% {
-    transform: scale(.9);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
 }
 
 @keyframes burst {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }

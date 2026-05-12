@@ -1,34 +1,67 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ .Title }}</title>
-  
-  {{ "<!-- Google Tag Manager -->" | safeHTML }}
+  {{ $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) }}
+  <title>{{ $title }}</title>
+
+  <!-- Google Tag Manager -->
   {{ if .Site.Params.gtm_id }}
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','{{ .Site.Params.gtm_id }}');</script>
-<!-- End Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ .Site.Params.gtm_id }}');
+  </script>
   {{ end }}
 
-  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <!-- Core meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ $desc := or .Params.Description .Site.Params.description }}
+  <meta name="description" content="{{ $desc }}">
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
+  <link rel="canonical" href="{{ .Permalink }}">
 
-  {{ "<!-- plugins -->" | safeHTML }}
+  <!-- Open Graph -->
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  {{ with .Params.Image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  <meta name="twitter:description" content="{{ $desc }}">
+  {{ with .Params.Image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+
+  <!-- JSON-LD Person schema (homepage only) -->
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}",
+    "url": "{{ .Site.BaseURL }}",
+    "sameAs": [
+      {{ range $i, $s := .Site.Params.social }}{{ if $i }},{{ end }}"{{ $s.link }}"{{ end }}
+    ]
+  }
+  </script>
+  {{ end }}
+
+  <!-- Plugins CSS -->
   {{ range .Site.Params.plugins.css }}
   <link rel="stylesheet" href="{{ .link | absURL }}">
   {{ end }}
 
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  <!-- Main Stylesheet -->
   {{ $styles := resources.Get "scss/style.scss" | toCSS }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
-  {{ "<!--Favicon-->" | safeHTML }}
+  <!-- Glide.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" integrity="sha256-BzKOCTtSFcYAqluCFSXdUMsHCn8MBHLb1AzKHegOVkU=" crossorigin="anonymous">
+
+  <!-- Favicon -->
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.svg` | absURL }}" type="image/x-icon">
-  
 </head>

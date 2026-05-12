@@ -3,3 +3,9 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Hugo build output — Netlify builds from source
+public/
+
+# Hugo resource cache
+resources/_gen/

@@ -1,26 +1,14 @@
+// _commons.scss
+// ---------------------------
+// Global Resets & Base Styles
 body {
   background-color: $body-color;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: lighten($color: $primary-color, $amount: 10);
+  background: lighten($primary-color, 10);
   color: $white;
-}
-
-/* preloader */
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 img {
@@ -35,111 +23,63 @@ a {
   text-decoration-color: transparent;
 }
 
-a,
-button,
-select {
+a, button, select {
   cursor: pointer;
-  transition: .2s ease;
-
-  &:focus {
-    outline: 0;
-  }
+  transition: 0.2s ease;
+  &:focus { outline: none; }
 }
 
 a:hover {
-      color: $white;
-      text-decoration: underline;
-      text-underline-offset: 5px;
-      text-decoration-color: $primary-color;
+  color: $white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: $primary-color;
 }
 
-.slick-slide {
-  outline: 0;
+/* Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Section Spacing */
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-
-  @include desktop {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  @include tablet {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
+  padding: 120px 0;
+  @include desktop { padding: 100px 0; }
+  @include tablet { padding: 80px 0; }
 }
 
+/* Article Card Default (avoid !important if possible) */
 article {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  padding: 40px;
   background: $dark;
 }
 
-.bg-cover {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+/* Utility Classes */
+.bg-cover { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.outline-0 { outline: 0; }
+.d-unset { display: unset; }
+.bg-primary { background: $primary-color; }
+.bg-black { background: $black; }
+.bg-dark { background: $dark; }
+.text-primary { color: $secondary-color !important; }
+.zindex-1 { z-index: 1; }
+.overflow-hidden { overflow: hidden; }
+.border-default { border-color: $border-color; }
+.rounded-lg { border-radius: 20px; }
+p:empty { display: none; }
+.nav-tabs { border-color: $border-color; }
+.collapse-wrapper > a { text-decoration: none; }
 
-
-.outline-0 {
-  outline: 0 !important;
-}
-
-.d-unset {
-  display: unset !important;
-}
-
-.bg-primary {
-  background: $primary-color !important;
-}
-
-.bg-black {
-  background: $black !important;
-}
-
-.bg-dark {
-  background: $dark !important;
-}
-
-.text-primary {
-  color: $secondary-color !important;
-}
-
-.zindex-1 {
-  z-index: 1;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.border-default {
-  border-color: $border-color !important;
-}
-
-.rounded-lg{
-  border-radius: 20px !important;
-}
-
-p:empty{
-  display: none;
-}
-
-.nav-tabs{
-  border-color: $border-color;
-}
-
-.collapse-wrapper>a{
-  text-decoration: none !important;
-}
-
-// particles
+/* Particles Background */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -148,22 +88,18 @@ p:empty{
   z-index: -1;
 }
 
-// typewriter effect
-
-
+/* Typewriter Effect */
 .typewriter {
-  color:#0000;
+  color: transparent;
   font-family: $secondary-font;
-  background:
-    linear-gradient(-90deg,$secondary-color 5px,#0000 0) 10px 0,
+  background: 
+    linear-gradient(-90deg, $secondary-color 5px, transparent 0) 10px 0,
     linear-gradient($text-color-light 0 0) 0 0;
-  background-size:calc(var(--n)*1ch) 200%;
-  -webkit-background-clip:padding-box,text;
-  background-clip:padding-box,text;
-  background-repeat:no-repeat;
-  animation: 
-   b .7s infinite steps(1),   
-   t calc(var(--n)*.125s) steps(var(--n)) forwards;
+  background-size: calc(var(--n)*1ch) 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n)*0.125s) steps(var(--n)) forwards;
 }
 
 .blinking-cursor {
@@ -176,15 +112,40 @@ p:empty{
   position: relative;
 }
 
-@keyframes blink {
-  50% {
-    background-color: transparent;
-  }
-}
+@keyframes blink { 50% { background-color: transparent; } }
+@keyframes t { from { background-size: 0 200%; } }
+@keyframes b { 50% { background-position: 0 -100%, 0 0; } }
 
-@keyframes t{
-  from {background-size:0 200%}
-}
-@keyframes b{
-  50% {background-position:0 -100%,0 0}
+/* Project Carousel */
+.project-carousel {
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .carousel-slide {
+    padding: 20px; // Adjust slide spacing as needed
+  }
+
+  // (Arrows are disabled in JS; these rules remain for reference)
+  .slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $white;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .slick-prev { left: 10px; }
+  .slick-next { right: 10px; }
+  .slick-dots {
+    bottom: -30px;
+    li {
+      margin: 0 5px;
+      button { &:before { font-size: 12px; color: $white; opacity: 1; } }
+      &.slick-active button:before { color: $primary-color; }
+    }
+  }
 }

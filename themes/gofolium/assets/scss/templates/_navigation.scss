@@ -1,22 +1,20 @@
+// _navigation.scss
+// ---------------------------
 .nav-item {
   margin: 0;
-
   .nav-link {
     text-transform: capitalize;
   }
 }
 
-.nav-lang{
+.nav-lang {
   margin: 15px 0 15px 10px;
-  padding: 0 !important;
-  @include desktop {
-    margin: 10px auto;
-  }
+  padding: 0;
+  @include desktop { margin: 10px auto; }
 }
 
 .navbar-dark .navbar-nav {
   position: relative;
-
   .nav-underline {
     position: absolute;
     left: 0;
@@ -29,7 +27,6 @@
   }
 }
 
-
 .navbar-dark .navbar-nav .nav-link {
   color: $text-color;
   text-decoration: none;
@@ -38,8 +35,5 @@
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 20px 15px;
-  @include desktop {
-    padding: 10px 0;
-  }
+  @include desktop { padding: 10px 0; }
 }
-

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(hugo version 2>&1)",
+      "PowerShell(if \\(-not $?\\) { \"Hugo not found in PATH\" })"
+    ]
+  }
+}

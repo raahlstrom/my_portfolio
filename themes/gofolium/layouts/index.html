@@ -4,7 +4,7 @@
 
 <!-- banner -->
 {{ if $data.homepage.banner.enable }}
-<section style="padding-bottom: 140px !important;padding-top: 40px !important" class="section pb-0" id="home">
+<section class="section pb-0 banner-section" id="home">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -20,7 +20,7 @@
         {{ if $data.homepage.banner.social }}
         <ul class="list-inline social-icons">
           {{ range .Site.Params.social }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{.icon }}"></i></a></li>
+          <li class="list-inline-item"><a href="{{ .link | safeURL }}" aria-label="{{ .title }}"><i class="{{.icon }}"></i></a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -37,18 +37,13 @@
 {{ with $data.homepage.about }}
 <section class="section pb-0" id="about">
   <div class="container">
-    <div class="row align-items-center" style="align-items:start!important">
+    <div class="row about-row">
       <div class="col-lg-2">
-        <img src="{{ .image | absURL }}" class="img-fluid rounded-lg mb-4" alt="">
+        <img src="{{ .image | absURL }}" class="img-fluid rounded-lg mb-4" alt="{{ $.Site.Params.author }}">
       </div>
       <div class="col-lg-8">
         {{with .title}}<h2>{{ . | markdownify}}</h2>{{ end }}
         <p>{{ .content | markdownify }}</p>
-          <h4>
-            <a href="https://datawizkid.com/blogs/2022-10-05-why-data-matters/">
-                Learn Why Data Matters →
-            </a>
-          </h4>
       </div>
     </div>
   </div>
@@ -118,11 +113,16 @@
       <div class="col-12 mb-5">
         <h2>{{ $data.homepage.project.title | markdownify }}</h2>
       </div>
-      {{ range first 3 (where .Site.RegularPages "Section" "==" "projects") }}
-      <div class="col-lg-4 col-sm-6 mb-4">
+    </div>
+    <!-- Carousel container -->
+    <div class="project-carousel">
+      {{ range (where .Site.RegularPages "Section" "==" "projects") }}
+      <div class="carousel-slide">
         {{ .Render "project" }}
       </div>
       {{ end }}
+    </div>
+    <div class="row">
       <div class="col-12 text-center mt-5">
         <a href="{{ `projects` | absLangURL }}" class="btn btn-primary btn-style">{{ i18n "all_projects" }}</a>
       </div>
@@ -130,6 +130,7 @@
   </div>
 </section>
 {{ end }}
+
 <!-- /projects -->
 
 <!-- blog -->
@@ -188,15 +189,15 @@
         <form action="{{ .contact_form_action }}" method="POST">
           <div class="form-group mb-4">
             <label for="name">{{ .name_label }}</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="{{ .name_label }}">
+            <input type="text" class="form-control" id="name" name="name" placeholder="{{ .name_label }}" autocomplete="name">
           </div>
           <div class="form-group mb-4">
             <label for="email">{{ .email_label }}</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="{{ .email_label }}">
+            <input type="email" class="form-control" id="email" name="email" placeholder="{{ .email_label }}" autocomplete="email">
           </div>
           <div class="form-group mb-4">
             <label for="message">{{ .textarea_label }}</label>
-            <textarea class="form-control" id="message" name="message" placeholder="{{ .textarea_label }}"></textarea>
+            <textarea class="form-control" id="message" name="message" placeholder="{{ .textarea_label }}" autocomplete="off"></textarea>
           </div>
           <button class="btn btn-primary" type="submit" value="send">{{ .button_label }}</button>
         </form>
